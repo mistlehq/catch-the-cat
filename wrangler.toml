@@ -1,0 +1,7 @@
+name = "catch-the-cat"
+main = "src/index.ts"
+compatibility_date = "2026-06-30"
+workers_dev = true
+
+[observability]
+enabled = true
