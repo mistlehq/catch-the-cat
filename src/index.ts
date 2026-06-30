@@ -1,4 +1,11 @@
+import * as Sentry from "@sentry/cloudflare";
+
 const html = String.raw;
+
+interface Env {
+  SENTRY_DSN?: string;
+  CF_VERSION_METADATA?: WorkerVersionMetadata;
+}
 
 const CAT_NORMAL = String.raw`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Smug tabby cat head">
   <defs>
@@ -511,7 +518,7 @@ function svgResponse(body: string): Response {
   });
 }
 
-export default {
+const handler = {
   async fetch(request): Promise<Response> {
     const url = new URL(request.url);
 
@@ -545,4 +552,13 @@ export default {
 
     return new Response("Not found", { status: 404 });
   }
-} satisfies ExportedHandler;
+} satisfies ExportedHandler<Env>;
+
+export default Sentry.withSentry(
+  (env: Env) => ({
+    dsn: env.SENTRY_DSN,
+    tracesSampleRate: 1.0,
+    environment: "demo"
+  }),
+  handler
+);

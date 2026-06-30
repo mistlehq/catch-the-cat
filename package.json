@@ -14,5 +14,8 @@
     "typescript": "^5.8.3",
     "wrangler": "^4.21.2"
   },
-  "packageManager": "pnpm@11.4.0"
+  "packageManager": "pnpm@11.4.0",
+  "dependencies": {
+    "@sentry/cloudflare": "^10.62.0"
+  }
 }

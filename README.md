@@ -17,6 +17,26 @@ mise exec -- pnpm install
 mise exec -- pnpm dev
 ```
 
+## Deploy
+
+```sh
+CLOUDFLARE_ACCOUNT_ID=<account-id> mise exec -- pnpm deploy
+```
+
+## Sentry
+
+Create a Sentry JavaScript project and add its DSN as a Cloudflare Worker secret:
+
+```sh
+mise exec -- pnpm exec wrangler secret put SENTRY_DSN
+```
+
+Then redeploy:
+
+```sh
+CLOUDFLARE_ACCOUNT_ID=<account-id> mise exec -- pnpm deploy
+```
+
 ## Deterministic Error
 
 The Worker throws a stable error when this URL is requested:
