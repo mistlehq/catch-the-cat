@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Caught surprised cat head">
+  <path d="M49 83 31 25l57 32c14-4 30-4 44 0l57-32-18 58c15 15 24 35 24 57 0 43-38 68-85 68s-85-25-85-68c0-22 9-42 24-57Z" fill="#ffca70" stroke="#241812" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M61 52 45 35l9 30M159 52l16-17-9 30" fill="none" stroke="#241812" stroke-width="7" stroke-linecap="round"/>
+  <path d="m72 106 21 21M93 106l-21 21M127 106l21 21M148 106l-21 21" stroke="#111" stroke-width="9" stroke-linecap="round"/>
+  <ellipse cx="110" cy="154" rx="20" ry="24" fill="#4a171f"/>
+  <path d="M105 136h10l-5 7Z" fill="#b93648"/>
+  <path d="M55 135H14M57 151H20M165 135h41M163 151h37" stroke="#241812" stroke-width="6" stroke-linecap="round"/>
+  <path d="M74 70c10 7 22 7 32 0M114 68c10 7 22 7 32 0" stroke="#b25b24" stroke-width="8" stroke-linecap="round"/>
+  <text x="110" y="43" text-anchor="middle" font-family="Arial Black, Impact, sans-serif" font-size="28" fill="#d71920" stroke="#fff" stroke-width="3">!</text>
+</svg>

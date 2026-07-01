@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Smug tabby cat head">
+  <defs>
+    <radialGradient id="fur" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#ffd88f"/>
+      <stop offset="64%" stop-color="#f5a84f"/>
+      <stop offset="100%" stop-color="#bd622e"/>
+    </radialGradient>
+  </defs>
+  <path d="M49 83 31 25l57 32c14-4 30-4 44 0l57-32-18 58c15 15 24 35 24 57 0 43-38 68-85 68s-85-25-85-68c0-22 9-42 24-57Z" fill="url(#fur)" stroke="#332018" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M61 52 45 35l9 30M159 52l16-17-9 30" fill="none" stroke="#332018" stroke-width="7" stroke-linecap="round"/>
+  <path d="M82 96c14-10 28-10 42 0M118 96c14-10 28-10 42 0" fill="none" stroke="#7b3f22" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="78" cy="120" rx="12" ry="15" fill="#191919"/>
+  <ellipse cx="142" cy="120" rx="12" ry="15" fill="#191919"/>
+  <circle cx="83" cy="114" r="4" fill="#fff"/>
+  <circle cx="147" cy="114" r="4" fill="#fff"/>
+  <path d="M105 141h10l-5 7Z" fill="#7b2c35"/>
+  <path d="M110 148c-12 13-29 14-42 5M110 148c12 13 29 14 42 5" fill="none" stroke="#332018" stroke-width="6" stroke-linecap="round"/>
+  <path d="M55 135H14M57 151H20M165 135h41M163 151h37" stroke="#332018" stroke-width="6" stroke-linecap="round"/>
+  <path d="M97 62 88 89M119 57l-3 29M143 63l-10 27" stroke="#7b3f22" stroke-width="8" stroke-linecap="round"/>
+</svg>
