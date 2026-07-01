@@ -473,8 +473,8 @@ const page = html`<!doctype html>
           window.setTimeout(() => {
             dangerButton.classList.remove("visible");
             scheduleDangerButton();
-          }, 2800);
-        }, 1800 + Math.random() * 5200);
+          }, 5000);
+        }, 600 + Math.random() * 1400);
       }
 
       cat.addEventListener("click", catchCat);
