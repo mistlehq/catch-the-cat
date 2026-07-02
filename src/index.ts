@@ -532,7 +532,13 @@ const handler = {
 
     if (url.pathname === "/api/demo-error") {
       if (url.searchParams.get("code") === "mistle-demo") {
-        throw new Error("MISTLE_DEMO_WORKER_ERROR: deterministic cat fault");
+        return Response.json(
+          {
+            ok: false,
+            error: "MISTLE_DEMO_WORKER_ERROR: deterministic cat fault"
+          },
+          { status: 500 }
+        );
       }
 
       return Response.json(

@@ -39,7 +39,7 @@ CLOUDFLARE_ACCOUNT_ID=<account-id> mise exec -- pnpm deploy
 
 ## Deterministic Error
 
-The Worker throws a stable error when this URL is requested:
+The Worker returns a stable `500` error payload when this URL is requested:
 
 ```text
 /api/demo-error?code=mistle-demo
@@ -52,4 +52,4 @@ MISTLE_DEMO_WORKER_ERROR: deterministic cat fault
 MISTLE_DEMO_CLIENT_ERROR: deterministic cat fault
 ```
 
-Those two fixed error messages are intended for a later Sentry setup, where Mistle can receive Sentry webhooks and fan the issue out to Linear, Slack, and an agent session.
+Those fixed error messages are intended for Sentry setup demos, where Mistle can receive Sentry webhooks and fan the issue out to Linear, Slack, and an agent session. The Worker-side demo response is handled instead of thrown so expected demo traffic does not create unhandled Worker exceptions.
